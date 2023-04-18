@@ -2,12 +2,17 @@
     margin: 0;
     box-sizing: border-box;
 }
+body {
+    min-width: 1400px;
+}
 .allcont {
     position: relative;
-    width: 1400px;
     height: 2411px;
     background: #FFFFFF;
+    margin: 0 auto;
+    max-width: 1400px;
 }
+
 .mainhead {
     height: 663px;
     left: 0px;
