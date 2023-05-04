@@ -91,6 +91,10 @@ body {
     width: 322px;
     height: 19px;
     display: flex;
+    transition: 0;
+}
+.hover_head:hover {
+    color: #46B1DE;
 }
 .infohead a {
     font-family: 'Roboto';
@@ -100,6 +104,9 @@ body {
     line-height: 19px;
     text-decoration: none;
     color: #1B1D1F;
+}
+.forphone::before {
+    content: url(../img/phone.svg);
 }
 .phonenamb {
     width: 174px;
@@ -113,8 +120,6 @@ body {
     height: 24px;
 }
 .forphone {
-    width: 145px;
-    height: 19px;
     margin-left: 5px;
 }
 .hrefphone {
@@ -134,6 +139,7 @@ body {
     top: 77px;
     position: absolute;
 }
+
 .langue {
     text-decoration: none;
     font-family: 'Roboto';
@@ -152,6 +158,38 @@ body {
     line-height: 23px;
     color: #000000;
 }
+.langue_UA::after{
+    content: " | " ;
+}
+.langue_UA__footer:hover{
+    color: white;
+}
+.langue_UA__footer{
+    text-decoration: none;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 23px;
+    color: #000000;
+}
+.langue__footer{
+    text-decoration: none;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    color: #000000;
+}
+.langue__footer:hover{
+    color: white;
+}
+.langue_UA__footer::after{
+    content: " | " ;
+    color: black;
+}
+
 .informmain {
     width: 530px;
     height: 158px;
@@ -501,6 +539,9 @@ body {
     display: flex;
     align-items: center;
 }
+.block_user:hover{
+    border: 2px solid #46B1DE;
+}
 .block_phone {
     width: 233px;
     height: 57px;
@@ -651,7 +692,7 @@ body {
     left: 116px;
     top: 181px;
 }
-.nbvbv{
+.footer_home{
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
@@ -660,7 +701,10 @@ body {
     color: #0F2D4A;
     text-decoration: none;
 }
-.yutufhg{
+.footer_home:hover{
+    color: white;
+}
+.footer_services{
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
@@ -668,6 +712,9 @@ body {
     line-height: 135%;
     color: #0F2D4A;
     text-decoration: none;
+}
+.footer_services:hover{
+    color: white;
 }
 .uytrytry{
     position: absolute;
@@ -744,7 +791,7 @@ body {
 display: flex;
 margin-bottom: 8px;
 }
-.fdsf4_1{
+.fotter_tel{
     text-decoration: none;
     font-family: 'Roboto';
     font-style: normal;
@@ -754,8 +801,22 @@ margin-bottom: 8px;
     text-align: center;
     color: #FFFFFF;
 }
+.fotter_tel::before {
+    content: url(../img/phone.png) ;
+    margin-right: 10px;
+}
+.fotter_tel:hover{
+    border-bottom: 2px solid white;
+}
+.footer_name:hover{
+    border-bottom: 2px solid white;
+}
+.footer_mail:hover{
+    border-bottom: 2px solid white;
+}
 .fdsf5_1{
     margin-bottom: 13px;
+
 }
 .fdsf5 {
     padding-right: 22px;
@@ -766,13 +827,23 @@ margin-bottom: 8px;
 .fdsf7 {
     display: flex;
 }
-.popppo_1{
-    margin-bottom: 15px;
-}
-.popppo {
+
+.footer_name {
     text-decoration: none;
     color: #FFFFFF;
-
+}
+.footer_name::before{
+    content: url(../img/instagram.png);
+    margin-right: 15px;
+}
+.footer_mail{
+    text-decoration: none;
+    color: #FFFFFF;
+    margin-right: 5px;
+}
+.footer_mail::before{
+    content: url(../img/email.png);
+    margin-right: 10px;
 }
 .copiright{
     position: absolute;
@@ -786,12 +857,6 @@ margin-bottom: 8px;
     text-align: center;
     color: #FFFFFF;
     margin-top: 12px;
-}
-.mbmmbmb{
-    padding-right: 15px;
-}
-.mbmmbmb_2{
-    padding-right: 10px;
 }
 .main_what_services {
     position: absolute;
