@@ -201,7 +201,7 @@ body {
     font-weight: 700;
     font-size: 40px;
     line-height: 130%;
-    animation: loader 2s;
+    animation: loader 2.9s;
 }
 
 @keyframes loader {
@@ -222,7 +222,7 @@ body {
     height: 66px;
     left: 110px;
     top: 373px;
-    animation: loader 1.5s;
+    animation: loader 1.9s;
 }
 
 .classtext {
@@ -242,13 +242,14 @@ body {
     justify-content: center;
     align-items: center;
     gap: 10px;
-    animation: loader 1.5s;
+    animation: loader 4s;
 }
 @keyframes footerconteiner {
-    0% {transform: scale(0);}
-    100% {transform: scale(1);}
-    0% {left: -400px;}
-    100% {left: 210px;}
+    0% {opacity: 0;}
+    60% {opacity: 0.6;}
+    70% {opacity: 0.8;}
+    100% {opacity: 1;}
+    0% {left: 0px;}
 }
 .firstcall {
     background: linear-gradient(97.59deg, #46B1DE 9.8%, #0591CC 95.1%);
@@ -304,8 +305,7 @@ body {
     top: 601px;
     left: 210px;
     position: absolute;
-    animation: footerconteiner 2.5s;
-
+    animation: footerconteiner 2s;
 }
 .fotterfirst {
     width: 280px;
@@ -910,7 +910,23 @@ margin-bottom: 8px;
     position: absolute;
     left: 50%;
     transform: translate(-50%);
+    animation: logozub 3s;
 }
+@keyframes logozub {
+    0% {opacity: 0;}
+    60% {opacity: 0.6;}
+    99% {opacity: 1;}
+    0% {width: 0px;}
+    0% {height: 0px;}
+    100% {width: 330px;}
+    100% {height: 302px;}
+    0% { left: 50%;}
+    0% {top:10%;}
+    20% {top:20%;}
+    3% {top:30%;}
+    100% {top:0%;}
+}
+/* -------------сделать для зуюа анимэ------------------------ */
 .text_what_services_left {
     font-family: 'Roboto';
     font-style: normal;
@@ -941,30 +957,83 @@ margin-bottom: 8px;
 .text_1 {
     position: absolute;
     left: 4%;
+    animation:text_1 3s;
+}
+@keyframes text_1 {
+    0% {opacity: 0;}
+    60% {opacity: 0.6;}
+    99% {opacity: 1;}
+    0% {left: -16%; top:-10%;}
+    95% {top:0px;}
 }
 .text_2 {
     position: absolute;
     top: 34%;
     left: 1%;
+    animation:text_2 3s;
+}
+@keyframes text_2 {
+    0% {opacity: 0;}
+    60% {opacity: 0.6;}
+    99% {opacity: 1;}
+    0% {left: -20%;}
 }
 .text_3 {
     position: absolute;
     top: 71%;
     left: 7%;
+    animation:text_3 3s;
+}
+@keyframes text_3 {
+    0% {opacity: 0;}
+    60% {opacity: 0.6;}
+    99% {opacity: 1;}
+    0% {left: -16%; top:90%;}
+    
 }
 .text_4 {
     position: absolute;
     left: 66%;
+    animation:text_4 3s ;
+}
+@keyframes text_4 {
+    0% {opacity: 0;}
+    60% {opacity: 0.6;}
+    99% {opacity: 1;}
+    0% { top:-10%;}
+    0% {left: 92%;}
+    95% {top:0px}
+    0% {width: 283px; height: 103px;}
+    100% {width: 283px; height: 103px;}
 }
 .text_5 {
     position: absolute;
     top: 34%;
     left: 73%;
+    animation:text_5 3s ;
+}
+@keyframes text_5 {
+    0% {opacity: 0;}
+    60% {opacity: 0.6;}
+    99% {opacity: 1;}
+    0% {left: 93%;}
+    0% {width: 271px; height: 84px;}
+    100% {width: 271px; height: 84px;}
 }
 .text_6 {
     position: absolute;
     top: 71%;
     left: 62%;
+    animation:text_6 3s ;
+}
+@keyframes text_6 {
+    0% {opacity: 0;}
+    60% {opacity: 0.6;}
+    99% {opacity: 1;}
+    0% {left: 88%; top:90%;}
+    0% {width: 300px; height: 103px;}
+    100% {width: 300px; height: 103px;}
+    
 }
 .main_attention {
     display: flex;
