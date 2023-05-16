@@ -34,11 +34,17 @@
                         <a class="hover_head"  href="#">Contacts</a>
                     </div>
                 </div>
+
                 <div class="phonenamb">
                     <div class="forphone">
                         <a class="hrefphone"  href="tel:0999999999">+38 (099) 999-99-99</a>
                     </div>
                 </div>
+                <!-- burger menu ------------------------- -->
+                <div class="burger ">
+                    <span></span> 
+                </div>
+                <!-- burger menu ------------------------- -->
             </header>
             <div class="changelang">
                 <a class="langue_UA" href="#">UA</a>  <a class="langue" href="#">EN</a>
@@ -287,5 +293,10 @@
             </div>
         </section>
     </div>
+    <script>
+        document.querySelector('.burger').addEventListener('click', function() {
+            this.classList.toggle('active');
+        })
+    </script>
 </body>
 </html>

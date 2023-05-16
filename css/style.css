@@ -14,6 +14,73 @@ body {
     max-width: 1400px;
 }
 
+@media screen and (max-width: 769px) {
+    .mainservcont {
+        display: none;
+    }
+    .changelang {
+        display: none;
+    }
+}
+/* burger menu ------------------------- */
+.burger {
+    display: none;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+    .burger {
+        display: block;
+        position: relative;
+        width: 30px;
+        height: 20px;
+        cursor: pointer;
+        top: 60px;
+        left: -40px;
+    }
+    .burger span {
+        position: absolute;
+        background-color: black;
+        width: 100%;
+        height: 2px;
+        top: 9px;
+        transition: all 0.3s ease 0s;
+    }
+    .burger::before,
+    .burger::after {
+        content: '';
+        background-color: black;
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        left: 0;
+        transition: all 0.3s ease 0s;
+    
+    }
+    .burger::before{
+        top: 0;
+    }
+    .burger::after{
+        bottom: 0;
+    }
+    
+    .burger.active span{
+        width: 0;
+    }
+    .burger.active::before{
+        top: 9px;
+        transform: rotate(-45deg);
+        background: #46B1DE;
+    }
+    .burger.active::after{
+        top: 9px;
+        transform: rotate(45deg);
+        background: #46B1DE;
+    }
+    
+}
+
+/* burger menu ------------------------- */
 .mainhead {
     height: 663px;
     left: 0px;
