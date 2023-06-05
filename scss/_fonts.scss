@@ -1,0 +1,45 @@
+%fontsNormalSofia {
+    font-family: 'Sofia Sans';
+    font-style: normal;
+    font-weight: 400;
+}
+%fontsNormalRoboto {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+}
+%fontsMidRoboto {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 600;
+}
+%fontsFiveRoboto {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 500;
+}
+%fontsSevenRoboto {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 700;
+}
+%textwhatservicesLeft {
+    @extend %fontsNormalRoboto;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: right;
+    color: #1B1D1F;
+}
+%textwhatservicesRight {
+    @extend %fontsNormalRoboto;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: left;
+    color: #1B1D1F;
+}
+%headwhatServices {
+    @extend %fontsMidRoboto;
+    font-size: 20px;
+    line-height: 135%;
+    color: $mainColor;
+}

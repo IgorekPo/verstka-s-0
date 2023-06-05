@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My site</title>
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="scss/css/main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
@@ -17,6 +17,7 @@
 <body>
     <div class="allcont">
         <section class="mainhead">
+            <img class="mainhead_img" src="./img/background.jpg" alt="background">
             <header class="firsthead">
                 <div class="firstlogo">
                     <div class="displayzub">
@@ -36,6 +37,7 @@
                 </div>
 
                 <div class="phonenamb">
+                    <img src="./img/phone.svg" alt="">
                     <div class="forphone">
                         <a class="hrefphone"  href="tel:0999999999">+38 (099) 999-99-99</a>
                     </div>
@@ -86,6 +88,7 @@
                     <div class="fottertext_therd">months warranty <br> for the services <br> provided</div>
                 </div>
             </footer>
+            <div class="mixin"></div>
         </section>
             <div class="why_you">WHY YOU SHOULD CHOOSE <span class="EXACTLY">EXACTLY ME?</span></div>
             <div class="why_you_text">Over 15 years of professional experience! More than 2000 people have used my<br>
@@ -228,7 +231,7 @@
                             <div><img class="user" src="./img/-phone-in-talk_904904.png" alt=""></div>
                             <div class="stick"></div> 
                             <div >
-                                <input maxlength="17" class="block_for_input_inform namber" type="tel" placeholder="Phone number" cols="3" >
+                                <input maxlength="17" class="block_for_input_inform " type="tel" placeholder="Phone number" cols="3" >
                             </div>
                         </div>
                         <a class="block_sing_up" href="#">
@@ -244,45 +247,49 @@
             <a href=""><img class="therd_photo" src="./img/Rectangle18.png" alt=""></a> 
         <section class="last_footer">
             <!-- dobavit norm classi -->
-            <div class="asdsdasda">
-                <div><img class="qweqwr" src="./img/Zub_vector1.png" alt=""></div>
-                <div class="asfvfgdf">
-                    <div class="jgfjjfj">DR. NIKOLA TESLA</div>
-                    <div class="zzzfv">dentist</div>
+            <div class="last_footer_left">
+                <div><img class="last_footer_logo" src="./img/Zub_vector1.png" alt=""></div>
+                <div class="last_footer_text">
+                    <div class="text_last_footer">DR. NIKOLA TESLA</div>
+                    <div class="text_last_footer">dentist</div>
                 </div>
             </div>
-            <div class="hffhfvnm">
+            <div class="footer_link">
                 <a class="footer_home" href="#">Home</a>
                 <a class="footer_services" href="#">Services</a>
             </div>
-            <div class="uytrytry">
+            <div class="langue_UA_block">
                 <a class="langue_UA__footer" href="#">UA</a><a class="langue__footer" href="#">EN</a>
             </div>
-            <div class="llllppp">
-                <span class="iiiioii"> Working hours:</span>
+            <div class="Working_hours">
+                <span class="Working_hours_text"> Working hours:</span>
             </div>
-            <div class="ooooppp">
-                <span class="xxxcccc">Mon-Fri: <br> 9:00-19:00</span>
+            <div class="work_time">
+                <span class="work_time_block">Mon-Fri: <br> 9:00-19:00</span>
             </div>
-            <div class="ioyyriypr">
-                <div class="fdsf1">CONTACTS</div>
-                <div class="ioyyriypr2" >
-                    <div class="fdsf2">Nikola Tesla</div>
-                    <div class="fdsf3">339 5th Ave, New York</div>
-                    <div class="fdsf4">
+            <div class="last_footer_contacts">
+                <div class="last_contacts">CONTACTS</div>
+                <div class="last_contacts_text" >
+                    <div class="last_contacts_name">Nikola Tesla</div>
+                    <div class="last_contacts_adress">339 5th Ave, New York</div>
+                    <div class="last_contacts_tel">
+                        <img src="./img/phone.png" alt="">
                         <div><a class="fotter_tel" href="tel:0999999999">+38 (099) 999-99-99</a></div>
                     </div>
-                    <div class="fdsf5_1">
-                        <a class="fdsf5" href=""><img src="./img/viber.png" alt=""></a>
-                        <a class="fdsf5" href=""><img src="./img/telegram.png" alt=""></a>
-                        <a class="fdsf5" href=""><img src="./img/whatsapp.png" alt=""></a>
+                    <div class="last_footer_img_block">
+                        <a class="last_footer_img" href=""><img src="./img/viber.png" alt=""></a>
+                        <a class="last_footer_img" href=""><img src="./img/telegram.png" alt=""></a>
+                        <a class="last_footer_img" href=""><img src="./img/whatsapp.png" alt=""></a>
                     </div>
-                    <div class="fdsf6">
+                    <div class="footer_link_info">
                         <div>
+                            <img src="./img/instagram.png" alt="">
                             <a class="footer_name" href="">dr.NikTes</a>
                         </div>
                     </div>
-                    <div class="fdsf7">
+                    <!-- footer_link_info -->
+                    <div class="footer_link_info"> 
+                        <img src="./img/email.png" alt="">
                         <a class="footer_mail" href="">dr.niktes@gmail.com</a>
                         </div>
                     <div class="fdsf8"></div>
